@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Bagun Datar</title>
+</head>
+<body>
+    <script>
+        // Menghitung luas Persegi Panjang 
+        let p = parseFloat(prompt("Inputkan panjang Persegi panjang: "));
+        let l = parseFloat(prompt("Inputkan lebar Persegi panjang: "));
+        let luas_persegiPanjang = p * l;
+        alert("Luas Persegi Panjang adalah: " + luas_persegiPanjang);
+
+        //  Menghitung luas Persegi (Bujur Sangkar)
+        let s = parseFloat(prompt("Inputkan sisi Persegi: "));
+        let luas_persegi = s * s;
+        alert("Luas Persegi adalah: " + luas_persegi);
+
+        //  Menghitung luas Segitiga 
+        let a = parseFloat(prompt("Inputkan alas Segitiga: "));
+        let t = parseFloat(prompt("Inputkan tinggi Segitiga: "));
+        let luas_segitiga = (a * t) / 2;
+        alert("Luas Segitiga adalah: " + luas_segitiga)
+
+        document.write("<h1 align='center'>Menghitung Luas Bangun Datar</h1>");
+
+        document.write("<hr>");
+
+        // Deskripsi Persegi Panjang
+        document.write("Diketahui Persegi panjang dengan Panjang " + p +
+            " cm dan Lebar " + l + " cm, maka luas Persegi panjang adalah " + luas_persegiPanjang
+        );
+
+        document.write("<hr>")
+
+        // Deskripsi Persegi Panjang
+        document.write("Diketahui Persegi  dengan  sisi " + s +
+            " cm, maka luas Persegi  adalah " + luas_persegi
+        );
+
+        document.write("<hr>")
+
+        // Deskripsi Segitiga
+        document.write("Diketahui Segitiga  dengan alas " + a +
+            " cm, dan Tinggi " + t + " cm, maka luas Segitiga adalah " + luas_segitiga
+        );
+
+        
+        
+    </script>
+    
+</body>
+</html>
