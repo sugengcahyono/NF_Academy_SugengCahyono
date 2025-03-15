@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KENDALI</title>
+</head>
+<body>
+    <!-- STUKUR KENDALI -->
+
+     <script>
+        // IF
+        let pelanggan = "Sugeng Cahyono";
+        let totalBelanja = 150000;
+        let keterangan = "";
+        // struktur kendali if
+        if (totalBelanja > 100000) {
+            keterangan = "Selamat " + pelanggan + " Anda dapat Hadiah";
+
+        }
+        else {
+            keterangan = "Terima kasih " + pelanggan + ", sudah berbelanja";
+        }
+
+        // cetak data 
+        document.write(keterangan);
+        document.write("<hr>");
+
+
+        // TERNARY
+        let siswa = "Sugeng cahyono";
+        let nilai = 75;
+        let keterangan1 = (nilai >=60) ? "Lulus" : "Gagal";
+        document.write("Siswa bernama " + siswa +
+         " dengan nilai " + nilai + " dinyatakan " + keterangan1);
+         document.write("<hr>");
+
+        // IF MULTI KONDISI 
+        let siswa1 = "Budi laili";
+        let nilai1 = 75;
+        let grade = "";
+        if (nilai1 > 85 && nilai <=100) grade = "A";
+        else if (nilai1 > 75 && nilai1 <= 85) grade = "B";
+        else if (nilai >= 60 && nilai <= 75) grade = "C";
+        else if (nilai >30 && nilai <60) grade = "D";
+        else if (nilai >= 0 && nilai <=30) grade = "E";
+        else grade ="";
+
+        document.write("siswa bernama " + siswa1 + " denan nilai " + nilai1
+            + " gradenya " + grade
+        );
+        
+
+
+        // SWITCH CASE 
+        switch (grade) {
+            case "A": predikat = "Memuaskan"; break;
+            case "B": predikat = "Baik"; break;
+            case "C": predikat = "Cukup"; break;
+            case "D": predikat = "Kurang"; break;
+            case "E": predikat = "Buruk"; break ;
+            default: oredikat = ""; break;
+        }
+        document.write("siswa bernama " + siswa1 + " dengan nilai " +
+            nilai1 + " gradenya " + grade + " predikatnya " + predikat
+        )
+        document.write("<hr>");
+
+     </script>
+</body>
+</html>
